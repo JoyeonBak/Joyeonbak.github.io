@@ -78,7 +78,7 @@ while True:
 
 print(result)
 ```
-![그리디1](/assets/images/banners/greedy1.png) {: width="30%"}
+<img src="/assets/images/banners/greedy1.png"  width=30% ></img>
 
 
 <span style="font-size:22.75px">
