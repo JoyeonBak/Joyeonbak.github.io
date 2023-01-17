@@ -77,6 +77,8 @@ while True:
 
 print(result)
 ```
+![그리디1](/assets/images/banners/greedy1.png) 
+
 
 <span style="font-size:28px font-weight:bold">input( ).split( )  
 vs. map(int, input( ).split( ))  
