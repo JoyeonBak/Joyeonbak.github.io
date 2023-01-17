@@ -78,7 +78,7 @@ while True:
 print(result)
 ```
 
-<span style="font-size:28px, font-weight:bold">input( ).split( )  
+<span style="font-size:28px; font-weight:bold">input( ).split( )  
 vs. map(int, input( ).split( ))  
 vs. list(map(int,input().split())) 구분</span>
 
