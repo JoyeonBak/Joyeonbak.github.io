@@ -78,13 +78,13 @@ while True:
 
 print(result)
 ```
-<img src="/assets/images/banners/greedy1.png"  width=30% ></img>
+<img src="/assets/images/banners/greedy1.png"  width="30%" ></img>
 
 
 <span style="font-size:22.75px">
-**input( ).split( )  
+***input( ).split( )  
 vs. map(int, input( ).split( ))  
-vs. list(map(int,input( ).split( ))) 구분**</span>
+vs. list(map(int,input( ).split( ))) 구분***</span>
 
 
 ```PYTHON
@@ -107,6 +107,16 @@ x, y, z = map(int, input().split)
 ```
 
 ### 반복 횟수가 많다면?
+위의 예시를 비교했을 때, 수열{6+6+6+5}가 반복적으로 더해지는 것을 확인할 수 있다.   
+한 숫자당 최대 덧셈 횟수가 K라고 하면 제일 큰 수 최대로 더하고(K회) 두번째 큰 수 한 번 더하는(1회) 방식이므로  
+수열의 길이 = K + 1  
+전체 덧셈 횟수 M에서 수열의 갯수 = M / K+1
+그런데, 몫이 딱 안나누어 떨어질 수 있고 안나누어 떨어진다면 남은 횟수는 최대 큰 수의 덧셈 횟수이므로
+```PYTHON
+int(m/(k+1))*k + m%(k+1)
+```
+
+
 ```PYTHON
 n, m, k = map(int, input().split())
 #N개의 수를 공백으로 구분하여 입력받기(주어진 배열)
@@ -118,12 +128,11 @@ first = data[n-1]
 second = data[n-2]
 result = 0
 
-"""
-* 연산기호 '몫' 표현하는 방법
-int(A/B) 또는 A//B
-"""
+
 count = int(m/(k+1)) * k
 
-
 ```
-#
+
+
+#### 연산기호 '몫' 표현하는 방법
+<span style="font-size:18px">int(A/B) 또는 A//B</span>
