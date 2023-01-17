@@ -48,6 +48,7 @@ Q. 주어진 배열의 수들을 M번 더하여 가장 큰 수 만들기 (단, K
 
 ```PYTHON
 """
+*** 반복 횟수가 많지 않을 떄의 방법
 N,M,K를 공백으로 구분하여 입력 받기
 N = 배열 요소 수
 M = 전체 덧셈 횟수
@@ -80,10 +81,10 @@ print(result)
 ![그리디1](/assets/images/banners/greedy1.png) {: width="30%"}
 
 
-<span style="font-size:28px">
+<span style="font-size:22.75px">
 **input( ).split( )  
 vs. map(int, input( ).split( ))  
-vs. list(map(int,input().split())) 구분**</span>
+vs. list(map(int,input( ).split( ))) 구분**</span>
 
 
 ```PYTHON
@@ -103,5 +104,22 @@ data = map(int, input().split()) => error
 x, y, z = map(int, input().split) 
 => x = 첫번째 입력받은 값, y = 두번째 입력받은 값, z = 세번째 입력받은 값
 """
+```
+
+### 반복 횟수가 많다면?
+```PYTHON
+n, m, k = map(int, input().split())
+#N개의 수를 공백으로 구분하여 입력받기(주어진 배열)
+data = list(map(int, input().split()))
+
+#작은 수 ~ 큰 수로 정렬을 미리 하면 따로 비교할 필요가 없음!
+data.sort()
+first = data[n-1] 
+second = data[n-2]
+result = 0
+
+count = int(m/(k+1)) * k
+
+
 ```
 
