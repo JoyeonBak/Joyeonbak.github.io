@@ -79,9 +79,10 @@ print(result)
 ```
 
 ### 여기서 잠깐!
-### input( ).split( ) 
-### vs. map(int, input( ).split( )) 
-### vs. list(map(int,input().split())) 구분
+<span style="font-size:28px">input( ).split( ) 
+vs. map(int, input( ).split( )) 
+vs. list(map(int,input().split())) 구분</span>
+
 
 ```PYTHON
 data = input().split()
@@ -98,6 +99,7 @@ print(data)
 list로 감싸지 않고 map만 쓰려면 입력 받은 여러 개의 값을 넣을 변수들을 같이 적어줘야 함
 data = map(int, input().split()) => error
 x, y, z = map(int, input().split) 
-        => x = 첫번째 입력받은 값, y = 두번째 입력받은 값, z = 세번째 입력받은 값
+=> x = 첫번째 입력받은 값, y = 두번째 입력받은 값, z = 세번째 입력받은 값
 """
 ```
+
