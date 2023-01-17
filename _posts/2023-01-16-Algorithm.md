@@ -77,12 +77,13 @@ while True:
 
 print(result)
 ```
-![그리디1](/assets/images/banners/greedy1.png) 
+![그리디1](/assets/images/banners/greedy1.png) {: width="30%"}
 
 
-<span style="font-size:28px font-weight:bold">input( ).split( )  
+<span style="font-size:28px">
+**input( ).split( )  
 vs. map(int, input( ).split( ))  
-vs. list(map(int,input().split())) 구분</span>
+vs. list(map(int,input().split())) 구분**</span>
 
 
 ```PYTHON
