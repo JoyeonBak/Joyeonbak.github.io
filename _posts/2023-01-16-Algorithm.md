@@ -113,6 +113,7 @@ x, y, z = map(int, input().split)
 전체 덧셈 횟수 M에서 수열의 갯수 = M / K+1
 그런데, 몫이 딱 안나누어 떨어질 수 있고 안나누어 떨어진다면 남은 횟수는 최대 큰 수의 덧셈 횟수이므로
 ```PYTHON
+#최대 큰 수의 덧셈 횟수
 int(m/(k+1))*k + m%(k+1)
 ```
 
@@ -128,9 +129,17 @@ first = data[n-1]
 second = data[n-2]
 result = 0
 
-
+#최대 큰 수의 덧셈 횟수
 count = int(m/(k+1)) * k
+count += m % (k+1)
 
+result = 0
+#가장 큰 수 더하기
+result += (count) * first
+#두번째로 큰 수 더하기
+result += (m-count) * second
+
+print(result)
 ```
 
 
