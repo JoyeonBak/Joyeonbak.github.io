@@ -44,7 +44,7 @@ print(count)
 
 ### 큰 수의 법칙
 Q. 주어진 배열의 수들을 M번 더하여 가장 큰 수 만들기 (단, K번을 초과해서 더해질 수 없다.)  
-<span style="color:#0000FF"> *예, \[2,4,5,6,4\]에서 M은 8이고 K는 3일 때, 6+6+6+5+6+6+6+5 = 46 정답은 46이다.* </span>
+<span style="color:##f6f8fa"> *예, \[2,4,5,6,4\]에서 M은 8이고 K는 3일 때, 6+6+6+5+6+6+6+5 = 46 정답은 46이다.* </span>
 
 ```PYTHON
 """
@@ -79,7 +79,25 @@ print(result)
 ```
 
 ### 여기서 잠깐!
-#### input( ).split( ) vs. map(int, input( ).split( )) vs. list(map(int,input().split())) 구분
+### input( ).split( ) 
+### vs. map(int, input( ).split( )) 
+### vs. list(map(int,input().split())) 구분
 
 ```PYTHON
+data = input().split()
+print(data)
+#['1','2','55','6'] 
+#입력 받은 값이 문자열 리스트로 저장
+
+data = list(map(int,input().split()))
+print(data)
+#[1, 2, 55, 6] 
+#입력 받은 값이 int 리스트로 저장
+
+"""
+list로 감싸지 않고 map만 쓰려면 입력 받은 여러 개의 값을 넣을 변수들을 같이 적어줘야 함
+data = map(int, input().split()) => error
+x, y, z = map(int, input().split) 
+        => x = 첫번째 입력받은 값, y = 두번째 입력받은 값, z = 세번째 입력받은 값
+"""
 ```
