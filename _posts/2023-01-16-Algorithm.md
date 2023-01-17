@@ -118,8 +118,12 @@ first = data[n-1]
 second = data[n-2]
 result = 0
 
+"""
+* 연산기호 '몫' 표현하는 방법
+int(A/B) 또는 A//B
+"""
 count = int(m/(k+1)) * k
 
 
 ```
-
+#
