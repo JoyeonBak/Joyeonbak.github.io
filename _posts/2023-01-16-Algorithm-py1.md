@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Greedy Algorithm
+title: "[Algorithm_Python] Greedy Algorithm"
 subtitle: 
 categories: Algorithm
 tags: [Algorithm, 알고리즘, GreedyAlgorithm, 그리디알고리즘]
@@ -112,10 +112,12 @@ x, y, z = map(int, input().split)
 수열의 길이 = K + 1  
 전체 덧셈 횟수 M에서 수열의 갯수 = M / K+1  
 그런데, 몫이 딱 안나누어 떨어질 수 있고 안나누어 떨어진다면 남은 횟수는 최대 큰 수의 덧셈 횟수이므로  
-최대 큰 수의 덧셈 횟수는 아래와 같다.  
+최대 큰 수의 덧셈 횟수는 아래와 같다. 
 
+
+```PYTHON
 int(m/(k+1))*k + m%(k+1)
-
+```
 
 
 ```PYTHON
@@ -143,4 +145,4 @@ print(result)
 ```
 
 
-#### * 연산기호 '몫' 표현하는 방법 : int(A/B) 또는 A//B
+#### * 연산기호 '몫' 표현하는 방법 : int( A / B ) 또는 A // B
