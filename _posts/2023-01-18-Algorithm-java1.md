@@ -37,7 +37,7 @@ for(질의 개수만큼 반복){
 }
 ```
 
-
+### 정답
 ```JAVA
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -70,7 +70,7 @@ public class Main {
             S[i] = S[i-1]+Integer.parseInt(stringTokenizer.nextToken());
         }
 
-        
+
         for(int k=0; k<quizNo; k++){
             stringTokenizer = new StringTokenizer(bufferedReader.readLine());
             int i = Integer.parseInt(stringTokenizer.nextToken());
