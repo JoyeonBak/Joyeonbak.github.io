@@ -3,13 +3,13 @@ layout: post
 title: "[Java]기초 문제"
 subtitle: 
 categories: Java
-tags: [ava]
+tags: [Java]
 --- 
 ## 정보처리기사 실기 기반  
-제어문자 | 기능
-\n     | 다음 줄 처음으로 이동
-\t     | 커서 일정 간격 띄움
-\0     | null 문자 출력
+제어문자    | 기능
+\n        | 다음 줄 처음으로 이동
+\t        | 커서 일정 간격 띄움
+\0        | null 문자 출력
 
 
 ***
@@ -103,7 +103,43 @@ public class Test{
         System.out.printf("%d", c);    
     }
 }
+//출력 : 14
 ```
+
+
+```JAVA
+public class Test{
+    public static void main(String[] args){
+       string str = "agile";
+       int x[] = {1, 2, 3, 4, 5};
+       char y[] = new char[5];
+       int i = 0;
+
+       while(i < str.length()){
+        //y[i]에 str의 i번째에 있는 문자를 저장
+        y[i]=str.charAt(i);
+        i++;
+        }
+        /*
+            향상된 for문
+            x배열의 각 요소 값을 차례로 받으면서 요소 수 만큼 반복 수행!
+        */
+       for(int p : x){
+        i--;
+        System.out.print(y[i]);    
+        System.out.print(p + " ");    
+        }
+   }
+}
+//출력 : e1 l2 i3
+```
+
+
+* break : 반복문 또는 switch문 안에서 break가 나오면 블록을 벗어남
+* continue : 반복문에서 continue가 나오면 그 이후의 문장들은 실행하지 않고  
+             다시 반복문의 처음으로 돌아가 다음 반복문 진행  
+
+
 출처 :  
 <https://noritersand.github.io/java/java-%EC%97%B0%EC%82%B0%EC%9E%90-operator/>
 <https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=james_parku&logNo=110166236377>
