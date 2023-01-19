@@ -39,13 +39,21 @@ for(질의 개수만큼 반복){
 
 
 ```JAVA
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-        //BufferedReader클래스 선언
+        //BufferedReader클래스 이용
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in)); 
-        //StringTokenizer클래스 선언
-        StringTokenizer stringTokenizer = new StringTokenizer(br.readLine());
+        /*
+            StringTokenizer클래스 이용
+            readLine() : 예제 "첫 줄"을 읽어온다는 뜻
+        */
+        StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
 
 
         //suNo = N (수의 개수)
@@ -56,13 +64,19 @@ public class Main {
 
         //정수형 타입 중 가장 큰 타입(8byte)
         long[] S = new long[suNo+1];
+        //두번째 줄에 입력받는 값(한줄) 받아오기
         stringTokenizer = new StringTokenizer(bufferedReader.readLine());
-
-
         for(int i=1; i<=suNo; i++){
             S[i] = S[i-1]+Integer.parseInt(stringTokenizer.nextToken());
         }
 
+        
+        for(int k=0; k<quizNo; k++){
+            stringTokenizer = new StringTokenizer(bufferedReader.readLine());
+            int i = Integer.parseInt(stringTokenizer.nextToken());
+            int j = Integer.parseInt(stringTokenizer.nextToken());
+            System.out.println(S[j]-S[i-1]);
+        }
     }
 }
 ```
