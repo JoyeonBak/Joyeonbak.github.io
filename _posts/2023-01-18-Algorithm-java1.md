@@ -37,7 +37,7 @@ for(질의 개수만큼 반복){
 }
 ```
 
-### <span style="color: #0000FF">정답</span>
+### <span style='background-color: #4063BD'>정답</span>
 ```JAVA
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -58,7 +58,7 @@ public class Main {
 
         //suNo = N (수의 개수)
         int suNo = Integer.parseInt(stringTokenizer.nextToken());
-        //quizNo = M(덧셈 횟수)
+        //quizNo = M(덧셈 횟수, 프로그램 돌릴 횟수)
         int quizNo = Integer.parseInt(stringTokenizer.nextToken());
         //첫번째 줄 완성
 
@@ -73,8 +73,8 @@ public class Main {
             S[i] = S[i-1]+Integer.parseInt(stringTokenizer.nextToken());
         }
 
-
         for(int k=0; k<quizNo; k++){
+            //입력받는 숫자가 줄마다 다르기 때문에 for문 안에 stringTokenizer 위치
             stringTokenizer = new StringTokenizer(bufferedReader.readLine());
             int i = Integer.parseInt(stringTokenizer.nextToken());
             int j = Integer.parseInt(stringTokenizer.nextToken());
