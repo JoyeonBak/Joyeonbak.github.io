@@ -5,11 +5,14 @@ subtitle:
 categories: Java
 tags: [ava]
 --- 
-## 정보처리기사 실기 기반
+## 정보처리기사 실기 기반  
 제어문자 | 기능
 \n     | 다음 줄 처음으로 이동
 \t     | 커서 일정 간격 띄움
 \0     | null 문자 출력
+
+
+***
 
 
 서식 문자열 | 의미
@@ -29,7 +32,7 @@ public class Test{
         //System.in : 표준입력장치로 입력된 값(키보드)
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
-        System.out.printlf("a * 3 = %d\n", a * 3);
+        System.out.printf("a * 3 = %d\n", a * 3);
         System.out.println("a / 2 = " + (a / 2));
         System.out.print("a - 1 =" + (a - 1));
         scan.close(); //닫아줘야 메모리를 다시 다른 프로그램이 사용할 수 있다.
@@ -42,7 +45,6 @@ public class Test{
 
 
 ```JAVA
-//거짓은 0, 참은 1
 public class Test{
     public static void main(String[] args){
         int w = 3, x = 4, y = 3, z = 5;
@@ -66,13 +68,42 @@ public class Test{
 //출력 : 7
 ```
 <img src="/assets/images/java/8.jpeg" >  
+
+
 <img src="/assets/images/java/9.jpeg" >  
+
+
 <img src="/assets/images/java/10.jpeg" >  
+
+
 <img src="/assets/images/java/11.jpeg" >  
+
+
 <img src="/assets/images/java/12.jpeg" >  
+
+
 <img src="/assets/images/java/13.jpeg" >  
 
 
-출처 :
+```JAVA
+//거짓은 0, 참은 1
+public class Test{
+    public static void main(String[] args){
+        int a = 5, b = 9, c;
+        c = b % 5 < 5 ? 1 : 0; //c = 1
+        /*
+            쉬프트연산자
+            c << 3 : c를 왼쪽으로 3번 이동(1*2*2*2)
+            비트연산자 비교
+            1 | 8 : 둘 다 비트형으로 변형 후 비교. 다르면 1, 1로 같으면 1, 0으로 같으면 0
+        */
+        c = c | c << 3;
+        c = a < 5 || c >= 10 ? c - a : c + a;
+
+        System.out.printf("%d", c);    
+    }
+}
+```
+출처 :  
 <https://noritersand.github.io/java/java-%EC%97%B0%EC%82%B0%EC%9E%90-operator/>
 <https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=james_parku&logNo=110166236377>
