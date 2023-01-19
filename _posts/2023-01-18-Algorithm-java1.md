@@ -37,7 +37,7 @@ for(질의 개수만큼 반복){
 }
 ```
 
-### 정답
+### <span style="color: #0000FF">정답</span>
 ```JAVA
 import java.io.BufferedReader;
 import java.io.IOException;
