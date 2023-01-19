@@ -50,8 +50,8 @@ public class Main {
         //BufferedReader클래스 이용
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in)); 
         /*
-        StringTokenizer클래스 이용
-        readLine() : 예제 "첫 줄"을 읽어온다는 뜻
+            StringTokenizer클래스 이용
+            readLine() : 예제 "첫 줄"을 읽어온다는 뜻
         */
         StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine());
 
@@ -65,8 +65,8 @@ public class Main {
         //정수형 타입 중 가장 큰 타입(8byte)
         long[] S = new long[suNo+1];
         /*
-        두번째 줄에 입력받는 값(한줄) 받아오기. 
-        메모리 때문에 새로운 변수 생성하지 않고 기존 변수 비우고 새로 사용
+            두번째 줄에 입력받는 값(한줄) 받아오기. 
+            메모리 때문에 새로운 변수 생성하지 않고 기존 변수 비우고 새로 사용
         */
         stringTokenizer = new StringTokenizer(bufferedReader.readLine());
         for(int i=1; i<=suNo; i++){
