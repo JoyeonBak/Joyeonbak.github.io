@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Java]기초 문제"
+title: "[Java] 기초 문제"
 subtitle: 
 categories: Java
 tags: [Java]
