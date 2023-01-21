@@ -135,9 +135,26 @@ public class Test{
 
 
 * break : 반복문 또는 switch문 안에서 break가 나오면 블록을 벗어남
-* continue : 반복문에서 continue가 나오면 그 이후의 문장들은 실행하지 않고  
-             다시 반복문의 처음으로 돌아가 다음 반복문 진행  
+* continue : 반복문에서 continue가 나오면 그 이후의 문장들은 실행하지 않고   
+             다시 반복문의 처음으로 돌아가 다음 반복문 진행   
 
+#### 변수 n에 저장된 10진수를 2진수로 변환 출력
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        int a[] = new int[8];
+        int i = 0;
+        int n = 10;
+        while(n > 0){
+            //처음에 a[0]에 값을 넣고나서 i++ 역할
+            a[i++]=(n % 2);
+            n /= 2;
+        }
+        for(i=7; i>=0; i--)
+            System.out.print(a[i]);
+    }
+}
+```
 
 출처 :  
 <https://noritersand.github.io/java/java-%EC%97%B0%EC%82%B0%EC%9E%90-operator/>
