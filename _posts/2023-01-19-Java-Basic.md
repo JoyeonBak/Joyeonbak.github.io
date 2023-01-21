@@ -106,6 +106,7 @@ public class Test{
 ```
 
 
+#### 제어문
 ```JAVA
 public class Test{
     public static void main(String[] args){
@@ -138,6 +139,7 @@ public class Test{
 * continue : 반복문에서 continue가 나오면 그 이후의 문장들은 실행하지 않고   
              다시 반복문의 처음으로 돌아가 다음 반복문 진행   
 
+
 #### 변수 n에 저장된 10진수를 2진수로 변환 출력
 ```JAVA
 public class Test{
@@ -155,6 +157,71 @@ public class Test{
     }
 }
 ```
+
+
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        int i = 0, c = 0;
+        while(i < 10){
+            i++;
+            c *= i;
+        }
+        System.out.println(c);
+    }
+}
+//출력 : 0
+```
+
+
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        int a = 0, sum = 0;
+        while(a < 10){
+            a++;
+            if(a % 2 == 1){
+                continue;
+                sum += a;
+            }
+            System.out.println(sum);
+        }
+    }
+}
+//출력 : 30
+```
+
+
+#### ary[][]
+* ary[i][j] : i는 크게 배열 개수, j는 그 안의 배열 요소 수
+    <span style="color:#808080">*ary[][]={{1,2,3},{5}} 일 때, ary[0][0]=1, ary[0][2]=3*</span>
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        int ary[][] = new int [3][5]
+        int n = 1;
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 5; j++){
+                ary[i][j] = j * 3 + i + 1;
+                System.out.print(ary[i][j] + " ");
+            }       
+        }
+        System.out.println();
+    }
+} 
+```
+
+<!-- 
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        
+    }
+}
+```
+-->
+
+
 
 출처 :  
 <https://noritersand.github.io/java/java-%EC%97%B0%EC%82%B0%EC%9E%90-operator/>
