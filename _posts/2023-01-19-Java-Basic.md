@@ -279,7 +279,7 @@ public class Test{
 ```
 
 
-### 클래스
+### Java 클래스
 * public static void main(String[] args)  
 : 모든 Java 프로그램은 실행용으로 만든 클래스 안에 반드시 main() 메소드가 있어야 실행이 시작된다.
 
@@ -302,15 +302,110 @@ public class Test{
 //출력 : 19
 ```
 
+* 일반적으로 어떤 클래스의 메소드를 호출하려면 메소드가 포함된 클래스의 객체 변수를 선언한 후 호출해야 한다.  
+  아래(Test.check(1))와 같이 호출하는 경우에는 호출되는 메소드가 static으로 선언되어야 한다.
+
 
 ```JAVA
 public class Test{
     public static void main(String[] args){
-        
+        System.out.print(Test.check(1));
+    }
+    static String check(int num){
+        return (num >= 0) ? "positive":"negative";
     }
 }
 ```
 
+
+* 아래 recursive 메소드의 쓰임과 같이 반복적으로 사용될 때, 반환 값만 가져오지 않고  
+메소드 안 실행문들은 모두 실행을 하고 반환값을 대입해야 함.
+
+
+```JAVA
+import java.utill.Scanner;
+
+public class Test{
+    public static void main(String[] args){
+        int i;
+        Scanner s = new Scanner(System.in);
+        System.out.print("숫자를 입력하시오: ");
+        i = s.nextInt();
+        recursive(i);
+        s.close();
+    }
+    static int recursive(int n){
+        int i;
+        if(n < 1)
+            return 2;
+        else {
+            i = (2 * recursive(n-1))+1;
+            System.out.println(i);
+            return i;
+        }
+    }
+}
+/*
+출력 :
+5
+11
+23
+47
+95
+*/ 
+```
+
+
+```JAVA
+public class Test{
+    static int[] arr(){
+        int a[] = new int[4];
+        int b = a.length;
+        for(int i=0; i<b; i++){
+            a[i] = i;
+            return a; //a=[0,1,2,3]
+        }
+    }
+    public static void main(String[] args){
+        int a[] = arr();
+        for(int i=0; i<a.length; i++)
+            System.out.print(a[i]+" ");
+    }
+}
+//출력 : 0 1 2 3
+```
+
+
+#### 생성자(지정 기능)
+어떤 클래스(의 메소드)를 사용하기 위해선 꼭 매개변수가 지정되어야 한다고 할 때, 생성자를 만들어야 한다.  
+*예를 들어, 어떤 메소드를 쓸 때는 매개변수가 필요한데 그 클래스의 메소드를 호출할 때, 매개변수 넣지 않고 호출 할 수도 있기 때문에!*
+
+
+```JAVA
+class A{
+    int a;
+    public A(int a){this.a = a;}
+    void display(){System.out.println("a="+a);}
+}
+class B extends A{
+    public B(int a){
+        /*
+            아래 의미는 클래스 변수 = new 클래스(a)로 객체 변수 선언한 것.
+            여기서 클래스는 상속받은 클래스니까 A
+        */
+        super(a); 
+        //객체 변수 선언 후, 그 클래스의 메소드를 호출
+        super.display();
+    }
+}
+public class Test{
+    public static void main(String[] args){
+        B obj = new B(10);
+    }
+}
+```
+
+### Java 활용
 
 
 
