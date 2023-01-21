@@ -192,9 +192,11 @@ public class Test{
 ```
 
 
-#### ary[][]
-* ary[i][j] : i는 크게 배열 개수, j는 그 안의 배열 요소 수
+#### ary[ ][ ]
+* ary[i][j] : i는 크게 배열 개수, j는 그 안의 배열 요소 수  
     <span style="color:#808080">*ary[][]=\{\{1,2,3\},\{5\}\} 일 때, ary[0][0]=1, ary[0][2]=3 그리고 ary[0].length = 3*</span>
+
+
 ```JAVA
 public class Test{
     public static void main(String[] args){
@@ -302,6 +304,9 @@ public class Test{
 //출력 : 19
 ```
 
+
+
+
 * 일반적으로 어떤 클래스의 메소드를 호출하려면 메소드가 포함된 클래스의 객체 변수를 선언한 후 호출해야 한다.  
   아래(Test.check(1))와 같이 호출하는 경우에는 호출되는 메소드가 static으로 선언되어야 한다.
 
@@ -316,6 +321,8 @@ public class Test{
     }
 }
 ```
+
+
 
 
 * 아래 recursive 메소드의 쓰임과 같이 반복적으로 사용될 때, 반환 값만 가져오지 않고  
@@ -354,6 +361,8 @@ public class Test{
 95
 */ 
 ```
+
+
 
 
 ```JAVA
@@ -404,6 +413,7 @@ public class Test{
     }
 }
 ```
+
 
 ### Java 활용
 
