@@ -194,7 +194,7 @@ public class Test{
 
 #### ary[][]
 * ary[i][j] : i는 크게 배열 개수, j는 그 안의 배열 요소 수
-    <span style="color:#808080">*ary[][]={{1,2,3},{5}} 일 때, ary[0][0]=1, ary[0][2]=3*</span>
+    <span style="color:#808080">*ary[][]={{1,2,3},{5}} 일 때, ary[0][0]=1, ary[0][2]=3 그리고 ary[0].length = 3*</span>
 ```JAVA
 public class Test{
     public static void main(String[] args){
@@ -209,6 +209,26 @@ public class Test{
         System.out.println();
     }
 } 
+```
+
+
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        int j, i;
+        for(j=0,i=0; i<=5;i++){
+            j += i;
+            System.out.print(i);
+            if(i==5){
+                System.out.print("=");
+                System.out.print(j);
+            }
+            else
+                System.out.print("+");
+        }
+    }
+}
+//출력 : 0+1+2+3+4+5=15
 ```
 
 <!-- 
