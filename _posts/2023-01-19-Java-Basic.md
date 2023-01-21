@@ -231,6 +231,91 @@ public class Test{
 //출력 : 0+1+2+3+4+5=15
 ```
 
+
+#### a, b 에 각각 8 과 3을 입력했을 때 결과는?
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextIn();
+        int b = scan.nextIn();
+        char c = 'G';
+
+        if(a > 10 && b < 10){
+            if(a - b < 5 || a > 15)
+                c = 'X';
+        }
+        else if(a > 5 && b < 5){
+            if(a - b < 3 || b > 0)
+                c = 'Y';
+        }
+        else
+            c = 'Z';
+
+        System.out.printf("%c", c);
+        scan.close();
+    }
+}
+//출력 : Y
+```
+
+
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        String str = "Programming";
+        int n = str.length();
+        char[] st = new char[n];
+        n--;
+        for(int k=n; k>=0; k--){
+            st[n-k] = str.charAt(k);
+        }
+        for(char k : st){
+            System.out.printf("%c", k);
+        }
+    }
+}
+//출력 : gnimmargorP
+```
+
+
+### 클래스
+* public static void main(String[] args)  
+: 모든 Java 프로그램은 실행용으로 만든 클래스 안에 반드시 main() 메소드가 있어야 실행이 시작된다.
+
+
+```JAVA
+class ClassA{
+    int a = 10;
+    int funcAdd(int x, int y){
+        return x + y + a;
+    }
+}
+public class Test{
+    public static void main(String[] args){
+        int x = 3, y = 6, r;
+        ClassA cal = new ClassA();
+        r = cal.funcAdd(x,y);
+        System.out.print(r);
+    }
+}
+//출력 : 19
+```
+
+
+```JAVA
+public class Test{
+    public static void main(String[] args){
+        
+    }
+}
+```
+
+
+
+
+
+
 <!-- 
 ```JAVA
 public class Test{
