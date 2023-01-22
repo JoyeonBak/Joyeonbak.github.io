@@ -444,7 +444,7 @@ public class Test{
 ```
 
 
-<img src="/assets/images/java/java_constructor.png" width="50%">
+<img src="/assets/images/java/java_constructor.png" width="70%">
 
 
 
