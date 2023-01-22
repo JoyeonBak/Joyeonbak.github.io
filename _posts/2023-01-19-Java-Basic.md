@@ -106,7 +106,7 @@ public class Test{
 ```
 
 
-#### 제어문
+### 제어문
 ```JAVA
 public class Test{
     public static void main(String[] args){
@@ -192,7 +192,7 @@ public class Test{
 ```
 
 
-#### ary[ ][ ]
+### ary[ ][ ]
 * ary[i][j] : i는 크게 배열 개수, j는 그 안의 배열 요소 수  
     <span style="color:#808080">*ary[][]=\{\{1,2,3\},\{5\}\} 일 때, ary[0][0]=1, ary[0][2]=3 그리고 ary[0].length = 3*</span>
 
@@ -385,7 +385,7 @@ public class Test{
 ```
 
 
-#### 생성자(지정 기능)
+### 생성자(지정 기능)
 어떤 클래스(의 메소드)를 사용하기 위해선 꼭 매개변수가 지정되어야 한다고 할 때, 생성자를 만들어야 한다.  
 예를 들어, 어떤 메소드를 쓸 때는 매개변수가 필요한데 그 클래스의 메소드를 호출할 때, 매개변수 넣지 않고 호출 할 수도 있기 때문.
 
