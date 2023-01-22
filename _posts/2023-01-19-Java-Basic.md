@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Java] 기초 문제"
+title: "[Java] 기초 문제 풀이(1)"
 subtitle: 
 categories: Java
 tags: [Java]
@@ -444,9 +444,29 @@ public class Test{
 ```
 
 
-<img src="/assets/images/java/java_constructor.png" width="70%">
+<img src="/assets/images/java/constructor.png" width="90%">
 
-
+```JAVA
+class Parent{
+    int compute(int num){
+        if(num<=1) return num; //세미콜론과 함께 if문 종료라는 것 주의!
+        return compute(num-1) + compute(num-2);
+    }
+}
+class Child extends Parent{
+    int compute(int num){
+        if(num<=1) return num; //세미콜론과 함께 if문 종료라는 것 주의!
+        return compute(num-1) + compute(num-3);
+    }
+}
+public class Test{
+    public static void main(String[] args){
+        Parent obj = new Child();
+        System.out.print(obj.compute(4));
+    }
+}
+//출력 : 0
+```
 
 <!-- 
 ```JAVA
@@ -461,5 +481,6 @@ public class Test{
 
 
 출처 :  
+시나공 정보처리기사 및 정보처리기사 기출문제
 <https://noritersand.github.io/java/java-%EC%97%B0%EC%82%B0%EC%9E%90-operator/>
 <https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=james_parku&logNo=110166236377>
