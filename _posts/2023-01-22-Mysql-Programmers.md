@@ -6,6 +6,15 @@ categories: SQL
 tags: [SQL, MYSQL]
 ---
 ### 프로그래머스 SQL 고득점 Kit 오답 풀이
+### SQL 구문 순서
+|SELECT 컬럼명    |(5) 
+|FROM 테이블명    |(1)
+|WHERE 테이블 조건 |(2)
+|GROUP BY 컬럼명  |(3)
+|HAVING 그룹 조건 |(4)
+|ORDER BY 컬럼명  |(6)
+
+
 ### 반올림, 올림, 버림
 ```MYSQL
 ROUND(숫자 또는 컬럼명, 반올림 하는 자리)
@@ -56,7 +65,8 @@ WHERE SALES_DATE >='2022-03-01' AND SALES_DATE < '2022-04-01'
 ```
 
 
-#### MEMBER_PROFILE와 REST_REVIEW 테이블에서 리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 
+#### JOIN & GROUP BY
+MEMBER_PROFILE와 REST_REVIEW 테이블에서 리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 
 
 
 
