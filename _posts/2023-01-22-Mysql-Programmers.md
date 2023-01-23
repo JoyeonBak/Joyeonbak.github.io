@@ -7,12 +7,13 @@ tags: [SQL, MYSQL]
 ---
 ### 프로그래머스 SQL 고득점 Kit 오답 풀이
 ### SQL 구문 순서
-|SELECT 컬럼명    |(5) 
-|FROM 테이블명    |(1)
-|WHERE 테이블 조건 |(2)
-|GROUP BY 컬럼명  |(3)
-|HAVING 그룹 조건 |(4)
-|ORDER BY 컬럼명  |(6)
+순서 때문에 SELECT의 ALIAS는 ORDER BY에서만 사용/적용된다.
+|SELECT 컬럼명      | (5) 
+|FROM 테이블명       | (1)
+|WHERE 테이블 조건   | (2)
+|GROUP BY 컬럼명    | (3)
+|HAVING 그룹 조건    | (4)
+|ORDER BY 컬럼명    | (6)
 
 
 ### 반올림, 올림, 버림
