@@ -55,5 +55,21 @@ WHERE SALES_DATE >='2022-03-01' AND SALES_DATE < '2022-04-01'
 -- DATE_FORMAT(SALES_DATE,'%Y-%m')='2022-03'와 같음
 ```
 
+
+#### MEMBER_PROFILE와 REST_REVIEW 테이블에서 리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 출처 :
 <https://thebook.io/006977/ch04/02/02/01/>
