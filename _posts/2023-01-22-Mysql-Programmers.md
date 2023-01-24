@@ -5,15 +5,14 @@ subtitle:
 categories: SQL
 tags: [SQL, MYSQL]
 ---
-### 프로그래머스 SQL 고득점 Kit 오답 풀이
 ### SQL 구문 순서
 순서 때문에 SELECT의 ALIAS는 ORDER BY에서만 사용/적용된다.
-|SELECT 컬럼명      | (5) 
-|FROM 테이블명       | (1)
-|WHERE 테이블 조건   | (2)
-|GROUP BY 컬럼명    | (3)
-|HAVING 그룹 조건    | (4)
-|ORDER BY 컬럼명    | (6)
+SELECT 컬럼명      | (5) 
+FROM 테이블명       | (1)
+WHERE 테이블 조건   | (2)
+GROUP BY 컬럼명    | (3)
+HAVING 그룹 조건    | (4)
+ORDER BY 컬럼명    | (6)
 
 
 ### 반올림, 올림, 버림
@@ -66,16 +65,38 @@ WHERE SALES_DATE >='2022-03-01' AND SALES_DATE < '2022-04-01'
 ```
 
 
-#### JOIN & GROUP BY
-MEMBER_PROFILE와 REST_REVIEW 테이블에서 리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 
+### JOIN & GROUP BY
+Q. MEMBER_PROFILE와 REST_REVIEW 테이블에서 리뷰를 가장 많이 작성한 회원의 리뷰들을 조회하는 SQL문을 작성해주세요. 
+```MYSQL
+```
 
 
 
 
 
+Q. USER_INFO 테이블과 ONLINE_SALE 테이블에서  
+2021년에 가입한 전체 회원들 중   
+상품을 구매한 회원수와 상품을 구매한 회원의 비율(=2021년에 가입한 회원 중 상품을 구매한 회원수 / 2021년에 가입한 전체 회원 수)을 년, 월 별로 출력하는 SQL문을 작성해주세요.   
+상품을 구매한 회원의 비율은 소수점 두번째자리에서 반올림하고,   
+전체 결과는 년을 기준으로 오름차순 정렬해주시고 년이 같다면 월을 기준으로 오름차순 정렬해주세요.   
+
+```MYSQL
+SELECT YEAR, MONTH, COUNT(*) AS PUCHASED_USERS,
+	ROUND((COUNT(*)/ (SELECT COUNT(*)
+					FROM USER_INFO WHERE YEAR(JOINED) = 2021)), 1) AS PUCHASED_RATIO
 
 
+-- 여기서 DISTINCT 가 중요하다. 여러번 구매한 사람이 있을 수 있기 때문.                            
+FROM (
+    SELECT DISTINCT YEAR(S.SALES_DATE) AS YEAR, MONTH(S.SALES_DATE) AS MONTH, U.USER_ID
+    FROM ONLINE_SALE S
+    JOIN USER_INFO U ON S.USER_ID = U.USER_ID AND YEAR(JOINED) = 2021
+) A
 
+
+GROUP BY YEAR, MONTH
+ORDER BY YEAR, MONTH
+```
 
 
 
