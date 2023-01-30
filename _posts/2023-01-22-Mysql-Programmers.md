@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Programmers_MySql] 프로그래머스 SQL 고득점 Kit 오답 풀이"
+title: "[SQL_Programmers] 프로그래머스 SQL 고득점 Kit 오답 풀이"
 subtitle: 
 categories: SQL
 tags: [SQL, MYSQL]
