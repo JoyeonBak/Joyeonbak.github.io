@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Programmers_MySql] 프로그래머스 SQL 고득점 Kit 오답 풀이"
+title: "[Programmers] 코딩테스트 입문"
 subtitle: 
-categories: SQL
-tags: [SQL, MYSQL]
+categories: Java
+tags: [Java]
 ---
 ### SQL 구문 순서
 순서 때문에 SELECT의 ALIAS는 ORDER BY에서만 사용/적용된다.
