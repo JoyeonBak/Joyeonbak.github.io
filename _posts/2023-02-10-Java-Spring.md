@@ -11,4 +11,5 @@ Object Relational Mapping
 테이블 - 객체 매핑(파싱 과정 불요)
 => 비즈니스 코드(내가 짜려는 코드)가 DB테이블에 바로 접근하게 도와줌  
 
-<img src="/assets/images/java/orm1.jpeg"  width="50%"><img src="/assets/images/java/orm2.jpeg"  width="50%">
+<img src="/assets/images/java/orm1.jpeg"  width="50%">  
+<img src="/assets/images/java/orm2.jpeg"  width="50%">  
