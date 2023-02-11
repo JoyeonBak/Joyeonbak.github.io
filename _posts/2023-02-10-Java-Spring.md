@@ -12,7 +12,7 @@ tags: [Java, Spring]
 ### *"따라서, Spring은 자바의 오픈소스 애플리케이션 프레임워크 중 하나로 특정 기술에 종속되지 않고 객체를 관리할 수 있는 프레임워크(컨테이너)를 제공한다."*
 
 
-***
+
 
 ## DI
 - Dependency Injection(의존성 주입)  
@@ -49,8 +49,9 @@ tags: [Java, Spring]
 - 대표적 JPA 구현체  
 - JAVA의 JPA(인터페이스)를 구현한(implement) 클래스  
 
-
+참고1.  
 <img src="/assets/images/java/jpa.png">
+참고2.  
 <img src="/assets/images/java/jpa1.png">
 
 ### ORM, JPA, Hibernate 의 장단점
