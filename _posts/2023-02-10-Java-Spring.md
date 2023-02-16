@@ -9,7 +9,7 @@ tags: [Java, Spring]
 - 여기서 말하는 스프링은 Spring Core  
 - SpringMVC는 라이브러리 중 하나  
 - 객체를 관리할 수 있는 "컨테이너" 제공 ➡ 의존성 주입 & 제어의 역전 ➡ 결합도 감소  
-### *"따라서, Spring은 자바의 오픈소스 애플리케이션 프레임워크 중 하나로 특정 기술에 종속되지 않고 객체를 관리할 수 있는 프레임워크(컨테이너)를 제공한다."*
+ *"따라서, Spring은 자바의 오픈소스 애플리케이션 프레임워크 중 하나로 특정 기술에 종속되지 않고 객체를 관리할 수 있는 프레임워크(컨테이너)를 제공한다."*
 
 
 
@@ -71,7 +71,7 @@ tags: [Java, Spring]
 
 
 출처 :  
-<https://www.youtube.com/watch?v=VHZ2i4cuwb8&list=PLi-xJrVzQaxU-xK2ao8utngQJqAX4DQty&index=7>
-<https://ksbsite.tistory.com/37>  
-<https://hanamon.kr/orm%EC%9D%B4%EB%9E%80-nodejs-lib-sequelize-%EC%86%8C%EA%B0%9C/>  
-<https://geonlee.tistory.com/207>  
+- <https://www.youtube.com/watch?v=VHZ2i4cuwb8&list=PLi-xJrVzQaxU-xK2ao8utngQJqAX4DQty&index=7>  
+- <https://ksbsite.tistory.com/37>  
+- <https://hanamon.kr/orm%EC%9D%B4%EB%9E%80-nodejs-lib-sequelize-%EC%86%8C%EA%B0%9C/>  
+- <https://geonlee.tistory.com/207>  
