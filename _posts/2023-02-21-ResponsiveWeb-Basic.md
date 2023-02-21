@@ -16,7 +16,7 @@ tags: [ResponsiveWeb]
 
 ### Media Queries
 * mdn사이트에서 문법 사용에 대한 자세한 내용 숙지할 것.  
-*<https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design>*  
+<https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design>  
 
 
 #### 보통 사이즈 기준  

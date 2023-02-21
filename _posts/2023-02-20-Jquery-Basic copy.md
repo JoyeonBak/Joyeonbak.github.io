@@ -8,6 +8,7 @@ tags: [Jquery]
 "jquery latest" 최신 버전으로 검색해서 아래와 같이 링크로 사용  
 ▶ 실무에서는 개발자와 사전에 어떤 버전을 사용할지 상의 후 결정  
 ▶ 브라우저(크롬)에 html파일 열어서 확인     
+
 ```HTML
 <head>
     <script src="http://code.jquery.com/jquery-latest.min.js">
