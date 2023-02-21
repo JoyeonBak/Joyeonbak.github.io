@@ -5,9 +5,9 @@ subtitle:
 categories: Jquery
 tags: [Jquery]
 --- 
-"jquery latest" 최신 버전으로 검색해서 아래와 같이 링크로 사용 
-*실무에서는 개발자와 사전에 어떤 버전을 사용할지 상의 후 결정 
-*브라우저(크롬)에 html파일 열어서 확인    
+"jquery latest" 최신 버전으로 검색해서 아래와 같이 링크로 사용  
+▶ 실무에서는 개발자와 사전에 어떤 버전을 사용할지 상의 후 결정  
+▶ 브라우저(크롬)에 html파일 열어서 확인     
 ```HTML
 <head>
     <script src="http://code.jquery.com/jquery-latest.min.js">
@@ -62,6 +62,8 @@ tags: [Jquery]
 </body>
 ```
 
-*display: none의 반대는 display: block이 아니다. 초기 설정 상태가 어떤 상태였냐에 따라 inline, flex 등으로 다르게 변경해야 레이아웃이 망가지지 않는다.
+▶ display: none의 반대는 display: block이 아니다. 초기 설정 상태가 어떤 상태였냐에 따라 inline, flex 등으로 다르게 변경해야 레이아웃이 망가지지 않는다.  
+
+
 출처 :  
 <https://www.youtube.com/watch?v=JzEMb5-wVIs>
