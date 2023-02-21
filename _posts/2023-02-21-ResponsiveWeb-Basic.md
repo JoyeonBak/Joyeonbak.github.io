@@ -15,16 +15,20 @@ tags: [ResponsiveWeb]
 ```
 
 ### Media Queries
-* mdn(<https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design>)사이트에서 문법 사용에 대한 자세한 내용 숙지할 것.  
-보통 사이즈 기준
-mobile : 320px-480px
-tablet : 768-1024px
-web : 1024px~
+* mdn사이트에서 문법 사용에 대한 자세한 내용 숙지할 것.  
+*<https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design>*  
 
-🔗 Resources (한번 읽어보면 좋은 내용들):
-<https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design>  
-<https://www.interaction-design.org/literature/article/adaptive-vs-responsive-design>  
-<https://www.internetingishard.com/>
+
+#### 보통 사이즈 기준  
+mobile : 320px-480px  
+tablet : 768-1024px  
+web : 1024px~  
+
+
+🔗 Resources (한번 읽어보면 좋은 내용들):  
+- <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design>  
+- <https://www.interaction-design.org/literature/article/adaptive-vs-responsive-design>  
+- <https://www.internetingishard.com/>
 
 
 
